@@ -1,0 +1,37 @@
+#!/usr/bin/python3
+'''
+This will be a pathonic CLI
+
+Inputs:
+-----------------
+    des(str):
+        description of your command-line interface
+    argv(list of str, optional):
+        this is a list of all the arguments that succeed the command
+    help(bool):
+        dissable automatic help? (maybe write your own?)
+    version(object):
+        something special if we ver --version
+    options(bool)
+        require that options proceed positional arguments
+
+
+Returns:
+-----------------
+    args(dict):
+        lets return a simple dictionary
+
+Example
+-----------------
+
+
+'''
+
+import sys
+
+
+def trilobyte(des, argv=None, help=True, version=None, options=False):
+    '''this will be the main egress'''
+
+    argv = sys.argv[1:] if argv is None else argv
+    # sys.argv[1:] gets all arguments after the command. default behavior
